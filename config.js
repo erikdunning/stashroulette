@@ -1,6 +1,6 @@
-module.export = {
+module.exports = {
     title: 'stash.roulette',
-    description: 'Limited hardware, limitless possibilities.'
+    description: 'Limited hardware with limitless possibilities.'
 };
 
 

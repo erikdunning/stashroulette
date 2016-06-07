@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    position: relative;
+}
+
+h2 {
+    font-size: 36px;
+    padding-top: 70px;
+    font-weight: 700;
+}
+
+h4 {
+    font-family: 'PT Serif';
+    font-size: 32px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+blockquote {
+    border: none;
+    font-size: 28px;
+    font-weight: 700;
+    color: #575757;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.video-wrapper {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 556px;
+    position: relative;
+}
+.video-wrapper video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.logo-image {
+    position: absolute;
+    width: 300px;
+    top: 80px;
+    left: calc( 50% - 150px );
+    background: rgba(0,0,0,0.25);
+    border-radius: 50px;
+}
+
+.header-tagline {
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.front-page-post {
+    padding-bottom: 63px;
+    width: 66.75%;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #fff;
+}
+
