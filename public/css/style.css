@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'PT Sans';
+    min-width: 960px;
 }
 
 header, footer {
@@ -12,6 +13,9 @@ footer {
     background-color: #3d3d3d;
     min-height: 261px;
     padding: 53px 0;
+    margin-top: 75px;
+    color: white;
+    text-align: center;
 }
 
 h2 {
@@ -130,6 +134,9 @@ blockquote {
     height: 568px;
     overflow: hidden;
     position: relative;
+    background-image: url('/img/providing.jpg');
+    background-size: cover;
+    backgronnd-repeat: no-repeat;
 }
 .front-page-image img {
     width: 100%;
@@ -167,12 +174,7 @@ blockquote {
 }
 
 .about-boxes .about-box .device-icon {
-    margin: 0 auto;
-    width: 100px;
-    height: 100px;
-    clear: both;
-    border: none;
-    box-shadow: none;
+    font-size: 60px;
 }
 
 .about-boxes .about-box label {
@@ -184,3 +186,57 @@ blockquote {
 }
 
 
+/* Employee Gallery */
+.employee-gallery {
+    display: flex;
+    padding: 0 40px;
+    width: 100%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.employee-gallery .employee {
+    padding: 40px;
+    cursor: pointer;
+    transition: opacity 0.25s;
+}
+.employee-gallery .employee:hover {
+    opacity: 0.75;
+}
+
+.employee-gallery .employee .image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-repeat: none;
+    background-position: center;
+    background-image: url('/img/reynolds.jpg');
+}
+
+.employee-gallery .employee .name {
+    color: #608c28;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 24px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.employee-gallery .employee .position {
+    text-align: center;
+}
+
+.social-icons {
+    text-align: center;
+    font-size: 40px;
+}
+
+.social-icons a:link,
+.social-icons a:active,
+.social-icons a:visited,
+.social-icons a:hover{
+    color:white;
+    padding: 20px;
+}

@@ -2,7 +2,8 @@ doctype
 html
     head
         title #{title}
-        link(rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=PT+Sans')
+        link(rel='stylesheet', type='text/css', href='https://fonts.googleapis.com/css?family=PT+Sans')
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
         link(rel='stylesheet', href='/css/style.css')
         link(rel='shortcut icon', href='/files/favicon.ico')
     body
@@ -15,10 +16,24 @@ html
             .header-links
                 a.header-link(href="/#home") Home
                 a.header-link(href="/#technology") Technology
-                a.header-link(href="/#who-we-are") Who We Are
+                a.header-link(href="/#whoweare") Who We Are
                 a.header-link(href="/blog") Blog
         .main-content
             block content
         footer
-            p Running on node with Express, Jade and Stylus
+            p.social-icons
+                a(target='_blank',href='http://twitter.com/siliconHBO')
+                    span.icon-wrapper.twitter
+                        i.fa.fa-twitter.footer-icon
+                a(target='_blank',href='http://facebook.com/siliconHBO')
+                    span.icon-wrapper.facebook
+                        i.fa.fa-facebook.footer-icon
+                a(target='_blank',href='http://instagram.com/siliconHBO')
+                    span.icon-wrapper.instagram
+                        i.fa.fa-instagram.footer-icon
+
+            p.contact-information
+                | Please direct all media queries to our business
+                | number or office email:  <br>
+
 
