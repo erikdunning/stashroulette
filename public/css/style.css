@@ -18,6 +18,14 @@ footer {
     text-align: center;
 }
 
+footer a:link,
+footer a:active,
+footer a:visited,
+footer a:hover{
+    color: white;
+    text-decoration: none;
+}
+
 h2 {
     font-size: 36px;
     padding-top: 70px;
@@ -159,7 +167,6 @@ blockquote {
 }
 
 .about-boxes {
-    width: 100%;
     max-width: 1200px;
     margin: 60px auto 0 auto;
     display: flex;
