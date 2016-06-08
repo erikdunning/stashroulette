@@ -6,6 +6,8 @@ html
         link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
         link(rel='stylesheet', href='/css/style.css')
         link(rel='shortcut icon', href='/files/favicon.ico')
+        script(src='https://code.jquery.com/jquery-2.2.4.min.js',integrity='sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=',crossorigin='anonymous')
+        script(src='/js/stashroulette.js')
     body
         header
             a(name='home')
@@ -14,10 +16,11 @@ html
             img(src='/files/stash.roulette.svg', class='logo-image')
             h4(class='header-tagline') #{description}
             .header-links
-                a.header-link(href="/#home") Home
-                a.header-link(href="/#technology") Technology
-                a.header-link(href="/#whoweare") Who We Are
-                a.header-link(href="/blog") Blog
+                a.header-link(href="/#home") home
+                a.header-link(href="/#technology") technology
+                a.header-link(href="/#whoweare") who we are
+                a.header-link(href="/#signup") signup
+                a.header-link(href="http://stashroulette.blogspot.com/",target="_blank") blog
         .main-content
             block content
         footer
@@ -37,4 +40,12 @@ html
                 | number or office email.  <br><br>
                 | (608) 622-5763 | <a href="mailto:contact@stashroulette.com">contact@stashroulette.com</a>
 
+    .modal-background
+        .modal-close X
+        .modal
+
+    .hide.signup-modal-content
+        .model-content
+            h2.text-align-center thanks for registering
+            p.text-align-center We'll keep you posted as more functionality becomes available!
 

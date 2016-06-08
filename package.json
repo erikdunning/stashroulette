@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "body-parser": "^1.15.1",
     "express": "^4.13.4",
     "lodash": "^4.13.1",
     "nodemailer": "^2.4.2",

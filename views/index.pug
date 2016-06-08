@@ -1,6 +1,6 @@
 extend layout
 block content
-    h2.text-align-center What is stash.roulette?
+    h2.text-align-center what is stash.roulette?
     hr
     .front-page-post
         blockquote.text-align-center
@@ -17,7 +17,7 @@ block content
                 br
                 span.info
                     | Enjoy stash.roulette's social sharing cababilities from 
-                    | all your desktop & mobile devices in forthcoming iterative 
+                    | all your desktop &amp; mobile devices in forthcoming iterative 
                     | releases.
             .about-box
                 span.device-icon.icon-wrapper.file
@@ -55,17 +55,17 @@ block content
             | A high availability, intelligent storage platform for tomorrow.
 
     a(name='blog')
-    h2.text-align-center From Our Blog
+    h2.text-align-center from our blog
     hr
 
-    h4.text-align-center Coming Soon!
+    h4.text-align-center coming soon!
 
     .front-page-image.technology
         .message
             | Value driven content sculpted by people and perfected by machines.
 
     a(name='technology')
-    h2.text-align-center Stash Roulette Technology
+    h2.text-align-center stash.roulette technology
     hr
 
     .front-page-image.who-we-are
@@ -74,7 +74,7 @@ block content
 
 
     a(name='whoweare')
-    h2.text-align-center Who We Are
+    h2.text-align-center who we are
     hr
 
     .employee-gallery
@@ -107,10 +107,25 @@ block content
             .name Malcom Reynolds
             .position CEO
 
+    a(name='signup')
+    h2.text-align-center signup
+    hr
 
-
-
-
-
+    form.contact-form(action='/signup', method='post')
+        label(for='name') Name
+        input(type='text',name='name',placeholder='name')
+        br
+        label(for='email') Email Address
+        input(type='text',name='email',placeholder='email address')
+        br
+        label(for='source') How did you learn about stash.roulette?
+        input(type='text',name='source',placeholder='source')
+        br
+        label(for='use') Intended use case:
+        br
+        textarea(name='use',placeholder='please tell us your use case so we can better serve you')
+        br
+        button(type='submit') Send
+        button(type='reset') Reset
 
 
