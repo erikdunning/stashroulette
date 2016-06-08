@@ -19,13 +19,13 @@ app.post('/signup', (req, res) => {
     exports.send_error_email = function( errors ){
 
     let transporter = nodemailer.createTransport('smtp://mail.badgermeter.com');
-     
+
     let mailOptions = {
-        from: '"Badger Meter Workday Service" <noreply@badgermeter.com>', // sender address 
-        to: cfg.error_emails.join(', '), // list of receivers 
-        subject: 'Encountered Workday Submission Errors', // Subject line 
-        text: errors //, // plaintext body 
-        /* html: '<b>Hello world 🐴</b>' // html body 
+        from: '"Badger Meter Workday Service" <noreply@badgermeter.com>', // sender address
+        to: cfg.error_emails.join(', '), // list of receivers
+        subject: 'Encountered Workday Submission Errors', // Subject line
+        text: errors //, // plaintext body
+        /* html: '<b>Hello world 🐴</b>' // html body
     };
 
     transporter.sendMail(mailOptions, function(error, info){
