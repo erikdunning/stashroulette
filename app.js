@@ -39,8 +39,6 @@ app.post('/signup', (req, res) => {
 
 });
 
-});
-
 let port = process.argv.length > 2 ? parseInt( process.argv[2] ) : 80;
 app.listen( port, () => {
     console.log('Stash Roulette is listening on port ' + port + '!');
