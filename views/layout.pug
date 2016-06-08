@@ -2,13 +2,21 @@ doctype
 html
     head
         title #{title}
+        link(rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=PT+Sans')
         link(rel='stylesheet', href='/css/style.css')
+        link(rel='shortcut icon', href='/files/favicon.ico')
     body
         header
+            a(name='home')
             .video-wrapper
                 video(src='/files/blurred.mp4', autoplay, loop)
             img(src='/files/stash.roulette.svg', class='logo-image')
-            h4(class='header-tagline') #{description} 
+            h4(class='header-tagline') #{description}
+            .header-links
+                a.header-link(href="/#home") Home
+                a.header-link(href="/#technology") Technology
+                a.header-link(href="/#who-we-are") Who We Are
+                a.header-link(href="/blog") Blog
         .main-content
             block content
         footer
