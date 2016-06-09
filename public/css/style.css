@@ -75,6 +75,10 @@ blockquote {
     display: none;
 }
 
+.clear-both {
+    clear: both;
+}
+
 .video-wrapper {
     background-repeat: no-repeat;
     background-size: cover;
@@ -173,10 +177,10 @@ blockquote {
     padding: 250px;
     color: white;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 40px;
     font-style: italic;
     font-family: serif;
-    text-shadow: 0 0 15px black;
+    text-shadow: 0 0 15px black, 0 0 7px black;
 }
 
 .about-boxes {
@@ -240,8 +244,8 @@ blockquote {
 .employee-gallery .employee.landstone .image {
     background-image: url('/img/headshots/landstone.jpg');
 }
-.employee-gallery .employee.henricks .image {
-    background-image: url('/img/headshots/henricks.jpg');
+.employee-gallery .employee.burton .image {
+    background-image: url('/img/headshots/burton.jpg');
 }
 .employee-gallery .employee.weber .image {
     background-image: url('/img/headshots/weber.jpg');
