@@ -225,6 +225,21 @@ blockquote {
     background-position: center;
     background-image: url('/img/reynolds.jpg');
 }
+.employee-gallery .employee.dunning .image {
+    background-image: url('/img/headshots/dunning.jpg');
+}
+.employee-gallery .employee.omara .image {
+    background-image: url('/img/headshots/omara.jpg');
+}
+.employee-gallery .employee.henricks .image {
+    background-image: url('/img/headshots/henricks.jpg');
+}
+.employee-gallery .employee.weber .image {
+    background-image: url('/img/headshots/weber.jpg');
+}
+.employee-gallery .employee.cisler .image {
+    background-image: url('/img/headshots/cisler.jpg');
+}
 
 .employee-gallery .employee .name {
     color: #608c28;
