@@ -68,6 +68,28 @@ block content
     h2.text-align-center stash.roulette technology
     hr
 
+    .front-page-post
+        h2 FAQ
+        p
+            | Q: So what exactly is stash.roulette? <br>
+            | A: stash.roulette is a cloud-based storage community where any data uploaded by one member is accessible by all other members.  The persistence of this data is then determined by the community members who assign value to each piece of data. If data is deemed to be of little value by the community, it is flagged for possible removal to make room for new data in the storage network.
+
+        p
+            | Q:  Wait, so I get access to everything that is currently uploaded to stash.roulette? <br>
+            | A:  Yes, all members have access to everything that is currently uploaded to stash.roulette.
+
+        p
+            | Q:  But what I upload might not stay on the system? <br>
+            | A:  This is also correct.  If the data isn’t deemed valuable by the stash.roulette community in general, then it is flagged to either eventually be removed or replaced by newly uploaded data.
+
+        p
+            | Q:  So what determines whether or not data is ‘valuable’ enough to remain on the network? <br>
+            | A:  Value of a piece of data is determined by several factors, but the main two are usage of the data by members and monetary pledges given by members to keep that data on network. Note that while money is a factor in keeping data on the sight, it isn’t a primary factor. For example, data that has a high usage rate by members requires a much smaller monetary pledge than data with few active users.
+
+        p
+            | Q:  So what keeps someone from exploiting the system? E.x. uploading a bunch of copies of the same file, or just re-uploading a file that got removed <br>
+            | A:  We have a complex fingerprinting and logging system in place to track the data that is both currently on our system and has been on our system in the past.  Multiple copies of the same file get reduced to a single file to reduce unneeded redundancy.  If someone re-uploads a file that was removed due to its low value, it gets identified as a low value item and is given a short TTL unless a user provides value through a monetary pledge.
+
     .front-page-image.who-we-are
         .message
             | People provide the value, we support the people.
@@ -96,8 +118,8 @@ block content
             .position Design Director
         .employee.butterfield
             .image
-            .name Herman Butterfield
-            .position ????
+            .name Herman J. Butterfield III
+            .position Verification Engineer
         .employee.burton
             .image
             .name Everett Burton
@@ -106,6 +128,21 @@ block content
     a(name='signup')
     h2.text-align-center signup
     hr
+
+    .front-page-post
+        h2 FAQ
+        p
+
+            | Q: How do I sign up? <br>
+            | A: Fill out the sign-up form below.  In time, we will send you an invite email with further instructions on how to set up your stash.roulette account.
+
+        p
+            | Q: I signed xx days ago and still haven’t gotten an invite email.  Am I ever getting one? <br>
+            | A: Yes, eventually.  Currently our system can handle a limited number of members.  As we expand our system’s capacity, we will slowly, but continually, send out more and more invites to people that have signed up.  Keep in mind there might be several days, or even weeks
+
+        p
+            | Q: So the data I upload to the stash.roulette cloud might get deleted? <br>
+            | A: This is correct, but only if members of our service don’t find value in what you’ve uploaded.  We hope create an efficient storage solution where only the data that is valued most by our users is retained.  This in turn allows us to keep costs down, which in turn allows us to rapidly expand our network’s storage capacity.
 
     form.contact-form(action='/signup', method='post')
         label(for='name') Name

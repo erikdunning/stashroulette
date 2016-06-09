@@ -236,6 +236,7 @@ blockquote {
     border-radius: 50%;
     background-repeat: none;
     background-position: center;
+    background-size: cover;
     background-image: url('/img/reynolds.jpg');
 }
 .employee-gallery .employee.dunning .image {
@@ -253,6 +254,10 @@ blockquote {
 .employee-gallery .employee.cisler .image {
     background-image: url('/img/headshots/cisler.jpg');
 }
+.employee-gallery .employee.butterfield .image {
+    background-image: url('/img/headshots/butterfield.jpg');
+}
+
 
 .employee-gallery .employee .name {
     color: #608c28;
