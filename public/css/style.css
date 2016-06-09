@@ -153,7 +153,15 @@ blockquote {
 .front-page-image img {
     width: 100%;
 }
-
+.front-page-image.blog {
+    background-image: url('/img/fulltable.jpg');
+}
+.front-page-image.technology {
+    background-image: url('/img/dartboard.jpg');
+}
+.front-page-image.who-we-are {
+    background-image: url('/img/fulltable.jpg');
+}
 .front-page-image .message {
     position: absolute;
     display: table-cell;
@@ -168,6 +176,7 @@ blockquote {
     font-size: 32px;
     font-style: italic;
     font-family: serif;
+    text-shadow: 0 0 15px black;
 }
 
 .about-boxes {
@@ -228,8 +237,8 @@ blockquote {
 .employee-gallery .employee.dunning .image {
     background-image: url('/img/headshots/dunning.jpg');
 }
-.employee-gallery .employee.omara .image {
-    background-image: url('/img/headshots/omara.jpg');
+.employee-gallery .employee.landstone .image {
+    background-image: url('/img/headshots/landstone.jpg');
 }
 .employee-gallery .employee.henricks .image {
     background-image: url('/img/headshots/henricks.jpg');
