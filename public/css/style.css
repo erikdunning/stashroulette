@@ -187,13 +187,14 @@ blockquote {
 .about-boxes {
     max-width: 1200px;
     margin: 60px auto 0 auto;
+    box-sizing: border-box;
     display: flex;
 }
 
 .about-boxes .about-box {
     padding: 20px;
     background: rgba(0,0,0,0.10);
-    margin: 0 10px;
+    border: solid 10px white;
     text-align: center;
 }
 
@@ -225,6 +226,7 @@ blockquote {
     padding: 40px;
     cursor: pointer;
     transition: opacity 0.25s;
+    text-align: center;
 }
 .employee-gallery .employee:hover {
     opacity: 0.75;
@@ -234,6 +236,7 @@ blockquote {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    display: inline-block;
     background-repeat: none;
     background-position: center;
     background-size: cover;
